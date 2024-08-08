@@ -62,10 +62,10 @@ export default function Home() {
           {/* Initial message from the assistant */}
           <Box
             display={'flex'}
-            justifyContent={'flex-end'} // Align the initial message to the right
+            justifyContent={'flex-start'} // Align the initial message to the right
           >
             <Box
-              bgcolor={'secondary.main'}
+              bgcolor={'#1F4096'}
               borderRadius={10}
               p={2}
               maxWidth={'60%'} // Limit the width of the text bubble
@@ -81,10 +81,10 @@ export default function Home() {
             <Box
               key={index}
               display={'flex'}
-              justifyContent={textObject.role === 'user' ? 'flex-start' : 'flex-end'}
+              justifyContent={textObject.role === 'user' ? 'flex-end' : 'flex-start'}
             >
               <Box
-                bgcolor={textObject.role === 'user' ? 'primary.main' : 'secondary.main'}
+                bgcolor={textObject.role === 'user' ? '#ff5f05' : '#1F4096'}
                 color={'white'}
                 borderRadius={10}
                 p={2}
