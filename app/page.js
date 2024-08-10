@@ -60,7 +60,12 @@ export default function Home() {
   };
 
   return (
-    <Box
+    <main> 
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
+      <h1 className="text-4xl p-4 text-center font-sans">uiucGPT</h1>
+      </div>
+
+      <Box
       width={'100vw'}
       height={'100vh'}
       display={'flex'}
@@ -157,5 +162,7 @@ export default function Home() {
         </Stack>
       </Stack>
     </Box>
+    </main>
+    
   );
 }
