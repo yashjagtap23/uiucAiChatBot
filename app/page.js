@@ -2,6 +2,11 @@
 import { Box, Stack, TextField, Button, Typography } from "@mui/material";
 import zIndex from "@mui/material/styles/zIndex";
 import { useState, useRef, useEffect } from "react";
+// import { Inter } from "next/font/google";
+
+// const inter = Inter({
+//   subsets: ["latin"]
+// });
 
 export default function Home() {
 
@@ -69,39 +74,44 @@ export default function Home() {
         display: 'flex',
         width: '100%',
         fontFamily: 'monospace',
-        fontSize: '0.875rem', // This is equivalent to text-sm in Tailwind CSS
-        // backgroundColor: 'blue'
+        fontSize: '0.875rem',
+        backgroundColor: '#a3e8ff'
       }}
       >
         <h1
         style={{
-          fontSize: '2.25rem', // This is equivalent to text-4xl in Tailwind CSS
-          padding: '1rem 0 0 0', // This is equivalent to p-4 in Tailwind CSS
+          fontSize: '2.25rem',
+          padding: '1rem 0 0 0',
           textAlign: 'center',
           fontFamily: 'sans-serif'
         }}
         >uiucGPT
         </h1>
       </div>
-
+      
       <Box
       width={'100%'}
-      height={'90vh'}
+      height={'100vh'}
       display={'flex'}
-      alignItems={'center'}
       justifyContent={'center'}
+      // alignItems={'center'}
+      bgcolor={'#a3e8ff'}
       >
-      
         <Stack 
           direction={'column'} 
           justifyContent={'flex-end'}
           width={'50%'} 
-          height={'80%'} 
-          maxHeight={'80%'} 
-          border={'2px solid black'} 
+          height={'72%'} 
+          maxHeight={'72%'} 
+          border={'1px solid #F5F5F5'} 
           borderRadius={5}
+          mt={'4rem'}
           spacing={3}
           overflow='hidden'
+          style={{
+            boxShadow: 'rgba(0, 0, 0, 0.4) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px -7px 20px'
+          }}
+          bgcolor={'white'}
         >
           <Stack direction={'column'} spacing={2} overflow={'auto'} mb={2}
           sx={{
@@ -120,9 +130,11 @@ export default function Home() {
                 borderRadius={5}
                 p={2}
                 mt={2}
+                mb={1}
                 maxWidth={'60%'} // Limit the width of the text bubble
+                boxShadow={'-3px 5px 5px #3c59a3'}
               >
-                <Typography color={'white'}>
+                <Typography color={'white'} >
                   {firstMessage}
                 </Typography>
               </Box>
@@ -145,6 +157,7 @@ export default function Home() {
                   p={2}
                   maxWidth={'60%'} // Limit the width of the text bubble
                   boxShadow={textObject.role === 'user' ? '3px 5px 5px #ff8540' : '-3px 5px 5px #3c59a3'}
+                  mb={1}
                 >
                   {/* Render HTML content */}
                   <Typography
@@ -183,7 +196,7 @@ export default function Home() {
             >Send</Button>
           </Stack>
         </Stack>
-      </Box>
+    </Box>
     </main>
     
   );
