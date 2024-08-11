@@ -6,7 +6,7 @@ Student Companion - AI Chat Bot for University of Illinois at Urbana Champaign
 
 Languages: `JavaScript` `HTML` `CSS`
 
-Frameworks: `Node` `MaterialUI` 'Tailwind'
+Frameworks: `Node` `MaterialUI` 
 
 ## Getting Started
 First, add a '.env.local' file: 
