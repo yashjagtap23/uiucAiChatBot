@@ -1,6 +1,7 @@
 # uiucAiChatBot
 Student Companion - AI Chat Bot for University of Illinois at Urbana Champaign 
-<img width="884" alt="Screenshot 2024-08-08 at 1 28 14 AM" src="https://github.com/user-attachments/assets/468962cb-8139-4189-bd65-f7fa81bedcaf">
+<img width="1638" alt="Screenshot 2024-08-11 at 2 21 34 PM" src="https://github.com/user-attachments/assets/3c15e4d7-3a7a-4f9e-a927-0374c7813b66">
+
 
 ## Getting Started
 First, add a '.env.local' file: 
