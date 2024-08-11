@@ -8,8 +8,6 @@ Languages: `JavaScript` `HTML` `CSS`
 
 Frameworks: `Node` `MaterialUI` 
 
-Ai: 'Gemini'
-
 ## Getting Started
 First, add a '.env.local' file: 
 Inside the add this line with your gemini key - GOOGLE_GENERATIVE_AI_API_KEY=#your key here
